@@ -7,22 +7,20 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn Reacttt
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <Navbar/>
+      <h1>My App in React</h1>
+      <main>
+    <Switch>
+       <Route path="/" component={Home} />
+        <Route path="/favoritos" component={Favoritos} />
+        <Route path="/detalle" component={Detalle} />
+        <Route path="/popular" component={Popular} />
+        <Route path="/upcoming" component={Upcoming} />
+    </Switch>
+    </main>
+    <Footer/>
+    </React.Fragment>
   );
 }
 
