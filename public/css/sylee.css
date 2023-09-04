@@ -1,0 +1,449 @@
+body {
+    background: #7b4397;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #dc2430, #7b4397);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsl(356, 72%, 50%), #7b4397);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: 0px;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    height: 130px;
+    width: 100%;
+
+}
+
+.barra a {
+    margin-left: 100px;
+    color: white;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+.barra li {
+    list-style-type: none;
+    display: inline;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo {
+    height: 90px;
+    border-radius: 100px;
+}
+
+form {
+    margin-left: 70px;
+}
+p {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+footer {
+    background-color: black;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    height: 120px;
+    width: 100%;
+    margin-bottom: 0px;
+
+}
+.logotmdb {
+    width: 120px;
+    height: 100px;
+    display: flex;
+    margin-left: 45%;
+}
+
+/* ESTILO DEL INDEX.HTML Y FAVORITE.HTML */
+
+.cajas {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.521);
+    width: 200px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+   
+}
+
+
+.categoria {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 30px;
+    margin: 27px;
+}
+.pelisRec{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.pelis {
+    height: 270px;
+    width: 100%;
+   
+}
+
+.titulo {
+    font-size: 16px;
+    font-weight: bolder;
+    color: white;
+}
+
+.estreno {
+    font-size: 10px;
+}
+
+.populares {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.logomdb {
+    height: 90px;
+    border-radius: 100px;
+}
+
+/* ESTILO DEL GENRES.HTML */
+.generos {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.titulos {
+    color: white;
+    font-size: 40px;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: double;
+    margin-left: 15px;
+}
+
+.listaGenero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: black;
+    margin: 30px;
+    flex-wrap: wrap;
+    
+}
+
+.generoLi {
+    color: white;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    margin: 25px;
+}
+
+h4 {
+    color: white;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.descubri {
+    color: white;
+    margin-left: 20px;
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+.genMain {
+    height: 36vw;
+}
+
+/* ESTILO DEL DETAIL-MOVIE.HTML Y DETAIL-SERIE.HTML (EN PARTE DE RESULTADOS.HTML)*/
+.detail {
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.info {
+    background-color: rgba(0, 0, 0, 0.521);
+    border-radius: 10px;
+    margin-right: 40px;
+}
+
+.imgDetail {
+    margin: 40px;
+}
+
+.imgDetailserie {
+    margin: 40px;
+    height: 500px;
+}
+
+.infoDetail {
+    background-color: rgba(0, 0, 0, 0.521);
+    border-radius: 10px;
+    justify-content: space-around;
+    padding: 40px;
+    color: white;
+}
+
+.tituloDetail {
+    font-weight: bolder;
+    text-align: center;
+    font-size: 30px;
+}
+
+.rating {
+    margin-left: 90px;
+    width: 50%;
+}
+
+.añadirFav {
+    margin-left: 82px;
+    margin-top: 50px;
+    width: 60%;
+    border-radius: 14px;
+}
+
+.duracion{
+    margin-left: 90px;
+    width: 50%;
+}
+
+
+/* ESTILO DEL RESULTADOS.HTML */
+.resultado {
+    color: white;
+    font-size: 60px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 60px;
+    margin-bottom: auto;
+    text-align: center;
+}
+#container {
+    margin-top: 50px;
+}
+.cargando {
+    display: inline-block;
+    position: relative;
+    width: 75px;
+    height: 75px;
+  }
+  .cargando div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    margin: 8px;
+    border: 8px solid rgb(251, 5, 5);
+    border-radius: 50%;
+    animation: cargando 2.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: rgb(255, 0, 0) transparent transparent transparent;
+}
+  .cargando div:nth-child(1) {
+    animation-delay: -0.5s;
+  }
+  .cargando div:nth-child(2) {
+    animation-delay: -0.4s;
+  }
+  .cargando div:nth-child(3) {
+    animation-delay: -0.22s;
+  }
+ 
+
+  .loader{
+    background-color: linear-gradient(to right, #4286f4, #373B44);
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    clip-path: circle(139.1% at 98% 1%);
+    transition: clip-path 0.5s ease-in-out;
+}
+   .loader2{
+    clip-path: circle(0% at 100% 100%);
+    transition: clip-path 0.5s ease-in-out;
+
+   } 
+
+
+/*MEDIA QUERIES --> PARA CELULAR IPHONE 12 PRO*/
+
+@media (max-width : 420px) {
+
+    .barra ul {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        padding: 0px;
+        flex-wrap: wrap;
+    }
+
+    .barra a {
+        margin-left: 0px;
+    }
+
+    header {
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        height: 300px;
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .barra li {
+        margin: 5px 0px;
+        font-size: 17px;
+    }
+
+    form {
+        margin-left: 0;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .populares {
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .categoria {
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        font-size: 25px;
+        margin: 10px 0px;
+    }
+
+    .cajas {
+        margin: 5px 0px;
+    }
+
+    .genMain {
+        height: 50 vw;
+    }
+
+    .footergenero {
+        height: 230px;
+    }
+
+    footer {
+        height: 230px;
+
+    }
+
+    .footerg {
+        margin-top: 300px;
+    }
+
+    .detail {
+        justify-content: left;
+        align-items: left;
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding-left: 2%;
+        padding-right: 2%;
+
+    }
+
+    .detail {
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .resultado{
+        font-size: 40px;
+    }
+    .info {
+        width: 80%;
+        margin: 0px;
+        margin-top: 30px;
+    }
+
+    .imgDetail {
+        width: 70%;
+    }
+
+    .infoDetail {
+        padding: 0px;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        flex-wrap: wrap;
+    }
+
+    .infoDetail p {
+        font-size: 12px;
+        margin-top: 10px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .rating {
+        width: 35%;
+    }
+
+    .añadirFav {
+        margin: auto;
+        align-self: center;
+        width: 50%;
+        padding-bottom: 10px;
+    }
+}
+@keyframes cargando {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
