@@ -4,7 +4,6 @@ function Navbar(){
     return(
         <header>
         <nav className="barra"> 
-
             <ul>
                 <li><img className="logo" src="./img/nuevoLogo.png" alt="logo"/></li>
                 <li><Link to="/">HOME</Link></li>

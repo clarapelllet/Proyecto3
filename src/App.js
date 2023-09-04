@@ -1,5 +1,4 @@
-import logo from './logo.svg';
-import './App.css';
+
 
 function App() {
   return (
@@ -10,9 +9,7 @@ function App() {
     <Switch>
        <Route path="/" component={Home} />
         <Route path="/favoritos" component={Favoritos} />
-        <Route path="/detalle" component={Detalle} />
-        <Route path="/popular" component={Popular} />
-        <Route path="/upcoming" component={Upcoming} />
+        <Route path="/generos" component={Generos} />
     </Switch>
     </main>
     <Footer/>
