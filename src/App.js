@@ -7,7 +7,7 @@ function App() {
   return (
     <React.Fragment>
       <Navbar/>
-      <h1>My App in React</h1>
+      <h1>My App in Reactt</h1>
       <main>
     <Switch>
        <Route path="/" component={Home} />
