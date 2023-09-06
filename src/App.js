@@ -15,7 +15,6 @@ function App() {
         <Route path="/generos" component={Generos} /> */}
     </Switch>
     </main>
-    <Home/>
     <Footer/>
     </React.Fragment>
   );

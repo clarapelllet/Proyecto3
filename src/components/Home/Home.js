@@ -1,96 +1,69 @@
-import React from "react";
+import React, { Component } from "react";
 // import {Link} from "react-router-dom";
-function Home(){
+import Tarjetas from "../Tarjetas/Tarjetas";
+
+class Home extends Component{
+
+    constructor(){
+        super();
+        this.state = {
+           peliculaspop : [],
+           peliculastr : []
+        }
+    }
+
+componentDidMount(){
+    fetch(`https://api.themoviedb.org/3/movie/popular?api_key=81faef6942a31915ed87b416fbba64ba&language=en-US&page=1`)
+    .then(response => response.json())
+    .then(data => this.setState({
+        peliculaspop: data.results
+    }))
+    .catch()
+    fetch(`https://api.themoviedb.org/3/movie/top_rated?api_key=81faef6942a31915ed87b416fbba64ba&language=en-US&page=1`)
+    .then(response => response.json())
+    .then(data => this.setState({
+        peliculastr: data.results
+    }))
+    .catch()
+}
+filtrarPelicula(textoAFiltrar){
+    //  Desarrollar el método para que deje solo los personajes en donde el texto a filtrar esté incluido en el nombre.
+        let peliculasFiltradas = this.state.peliculaspop.filter(function(pelifiltrada){
+            return pelifiltrada.name.includes(textoAFiltrar) //includes retorna TRUE o FALSE
+        })
+
+        this.setState({
+            peliculaspop: peliculasFiltradas,
+        })
+
+    }
+
+render(){
+    console.log(this.setState.peliculaspop)
+    console.log(this.setState.peliculastr)
     return(
-<main>
-        <h3 class="categoria">Películas Populares</h3>
-       <section class="populares">
-        <article class="cajas">
-            <a href="./detail-movie.html"></a>
-            <p class="titulo">Son Como Niños</p>
-            <p class="estreno">Estrenada el 22 de Julio de 2010</p>
-        </article>
-        <article class="cajas">
-            <a href="./detail-movie.html"></a>
-            <p class="titulo">Mas Barato Por Docena 2</p>
-            <p class="estreno">Estrenada el 21 de Diciembre de 2005</p>
-        </article>
-       <article class="cajas">
-        <a href="./detail-movie.html"></a>
-        <p class="titulo">Spiderman</p>
-            <p class="estreno">Estrenada el 17 de Diciembre de 2021</p>
-       </article>
-       <article class="cajas">
-        <a href="./detail-movie.html"></a>
-        <p class="titulo">Monsters Inc.</p>
-            <p class="estreno">Estrenada el 6 de Diciembre de 2001</p>
-       </article>
-       <article class="cajas">
-        <a href="./detail-movie.html"></a>
-        <p class="titulo">Titanic</p>
-            <p class="estreno">Estrenada el 5 de Febrero de 1998</p>
-       </article>
-       </section>
-
-       <h3 class="categoria"> Series Populares </h3>
-       <section class="populares">
-        <article class="cajas">
-            <a href="./detail-serie.html"></a>
-            <p class="titulo">Gossip Girl</p>
-            <p class="estreno">Estrenada el 19 de septiembre de 2007</p>
-        </article>
-        <article class="cajas">
-            <a href="./detail-serie.html"></a>
-            <p class="titulo">Suits</p>
-            <p class="estreno">Estrenada el 23 de junio de 2011</p>
-        </article>
-       <article class="cajas">
-        <a href="./detail-serie.html"></a>
-        <p class="titulo">Grey's Anatomy</p>
-            <p class="estreno">Estrenada el 27 de marzo de 2005</p>
-       </article>
-       <article class="cajas">
-        <a href="./detail-serie.html"></a>
-        <p class="titulo">La Casa de Papel</p>
-            <p class="estreno">Estrenada el 2 de mayo de 2017</p>
-       </article>
-       <article class="cajas">
-        <a href="./detail-serie.html"></a>
-        <p class="titulo">Breaking Bad</p>
-            <p class="estreno">Estrenada el 20 de enero de 2008</p>
-       </article>
-       </section>
-
-       <h3 class="categoria">Películas Valoradas</h3>
-       <section class="populares">
-        <article class="cajas">
-            <a href="./detail-movie.html"></a>
-            <p class="titulo">La Propuesta</p>
-            <p class="estreno">Estrenada el 2 de julio de 2009</p>
-        </article>
-        <article class="cajas">
-            <a href="./detail-movie.html"></a>
-            <p class="titulo">Thor</p>
-            <p class="estreno">Estrenada el 7 de julio de 2022</p>
-        </article>
-       <article class="cajas">
-            <a href="./detail-movie.html"></a>
-            <p class="titulo">Luca</p>
-            <p class="estreno">Estrenada el 18 de junio de 2021</p>
-       </article>
-       <article class="cajas"> 
-        <a href="./detail-movie.html"></a>
-        <p class="titulo">Corazones Malheridos</p>
-            <p class="estreno">Estrenada el 29 de julio de 2022</p>
-       </article>
-       <article class="cajas">
-        <a href="./detail-movie.html"></a>
-        <p class="titulo">Relatos Salvajes</p>
-            <p class="estreno">Estrenada el 21 de agosto de 2014</p>
-       </article>
-       </section>
-    </main>
+        <React.Fragment>
+        <section>
+            <h2>Peliculas Populares</h2>
+            { 
+               this.state.peliculaspop.slice(0,6).map(
+                (pelicula,i) => <Tarjetas key= {pelicula + i} datosPelicula={pelicula}/>
+               )
+            }
+        </section>
+        <section>
+            <Filtro filtrar={(texto) => this.filtrarPelicula(texto)} />
+            <h2>Peliculas Top Rated</h2>
+            { 
+               this.state.peliculastr.slice(0,6).map(
+                (pelicula,i) => <Tarjetas key= {pelicula + i} datosPelicula={pelicula}/>
+               )
+            }
+        </section>
+        </React.Fragment>
+        
     )
+}
 }
 
 export default Home
