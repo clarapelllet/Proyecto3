@@ -52,7 +52,7 @@ render(){
             }
         </section>
         <section>
-            <Filtro filtrar={(texto) => this.filtrarPelicula(texto)} />
+            <filtro filtrar={(texto) => this.filtrarPelicula(texto)} />
             <h2>Peliculas Top Rated</h2>
             { 
                this.state.peliculastr.slice(0,6).map(
