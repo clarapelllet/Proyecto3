@@ -12,11 +12,11 @@ render(){
     console.log(this.props);
     return(
         <article className='cajas'>
-            {/* <img className='pelis' src={""}/> */}
+            <img className="pelis" src={this.props.datosPelicula.poster_path} alt={this.props.datosPelicula.title} />
             <div className="cajas">
                 <p className="titulo">  {this.props.datosPelicula.title} </p>
                 <p className="estreno">  {this.props.datosPelicula.release_date} </p>
-                < Link to= "" className="estreno"> Ir a Detalle </Link>
+                < Link to= "/Detalle" className="estreno"> Ir a Detalle </Link>
             </div>
         </article>
     )
