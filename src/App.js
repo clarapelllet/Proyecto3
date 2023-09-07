@@ -6,14 +6,6 @@ import Favoritos from "./components/Favoritos/Favoritos";
 import Generos from "./components/Generos/Generos";
 import Home from "./components/Home/Home";
 
-import React from "react";
-import {Route, Switch} from 'react-router-dom';
-import Navbar from "./components/Navbar/Navbar";
-import Footer from "./components/Footer/Footer";
-import Favoritos from "./components/Favoritos/Favoritos";
-import Generos from "./components/Generos/Generos";
-import Home from "./components/Home/Home";
-
 
 function App() {
   return (
