@@ -1,12 +1,11 @@
 import React from "react";
-import {Route, Switch} from 'react-router-dom';
-import Navbar from "./components/Navbar/Navbar";
-import Footer from "./components/Footer/Footer.js";
-import Favoritos from "./components/Favoritos/Favoritos";
-import Generos from "./components/Generos/Generos";
 import Home from "./components/Home/Home";
 
 
+
+import Footer from "./components/Footer/Footer";
+import Navbar from "./components/Navbar/Navbar";
+import {Switch,Route} from "react-router-dom";
 function App() {
   return (
     <React.Fragment>
@@ -15,8 +14,8 @@ function App() {
       <main>
     <Switch>
        <Route path="/" component={Home} />
-        <Route path="/favoritos" component={Favoritos} />
-        <Route path="/generos" component={Generos} />
+        {/* <Route path="/favoritos" component={Favoritos} />
+        <Route path="/generos" component={Generos} /> */}
     </Switch>
     </main>
     <Footer/>
