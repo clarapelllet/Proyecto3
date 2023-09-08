@@ -17,7 +17,7 @@ function App() {
       {/* <h1>My App in Reactt</h1> */}
       <main>
     <Switch>
-       <Route path="/" component={Home} />
+       <Route path="/" exact={ true } component={Home} />
        <Route path="/Detalle" component={Detalle} />
         {/* <Route path="/favoritos" component={Favoritos} />
         <Route path="/generos" component={Generos} /> */}
