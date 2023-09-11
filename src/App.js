@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Detalle from "./components/Detalle/Detalle";
 // import Filtro from "./components/Filtro/Filtro";
 // import Tarjetas from "./components/Tarjetas/Tarjetas";
-// import Valoradas from "./components/Populares/Populares"
+import Valoradas from "./components/Populares/Populares"
 // import Populares from "./components/Valoradas/Valoradas"
 
 
@@ -19,6 +19,9 @@ function App() {
     <Switch>
        <Route path="/" exact={ true } component={Home} />
        <Route path="/Detalle/:id" component={Detalle} />
+       <Route path="/Valoradas" component={Valoradas} />
+       <Route path="/Populares" component={Populares} />
+
         {/* <Route path="/favoritos" component={Favoritos} />
         <Route path="/generos" component={Generos} /> */}
     </Switch>
