@@ -63,12 +63,12 @@ class Tarjetas extends Component {
         console.log(this.props)
         return(
             <article className='cajas'>
-                <img className="pelis" src={this.props.datosPelicula.poster_path} alt={this.props.datosPelicula.title} />
+                <img class="pelis" src= {`https://image.tmdb.org/t/p/w500${this.props.datosPelicula.poster_path}`} alt="" />
                 <button onClick={()=>this.agergarYSacarDeFavs(this.props.datosPelicula.id)} type='button'>{this.state.textoBoton}</button>
                 <div className="cajas">
                     <p className="titulo">  {this.props.datosPelicula.title} </p>
                     <p className="estreno">  {this.props.datosPelicula.release_date} </p>
-                    < Link to= "/Detalle/:id" className="estreno"> Ir a Detalle </Link>
+                    < Link to={`/Detalle/${this.props.datosPelicula.id}`} className="estreno"> Ir a Detalle </Link>
                 </div>
             </article>
         )

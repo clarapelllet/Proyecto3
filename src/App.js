@@ -17,10 +17,10 @@ function App() {
       {/* <h1>My App in Reactt</h1> */}
       <main>
     <Switch>
-       <Route path="/" exact={ true } component={Home} />
-       <Route path="/Detalle/:id" component={Detalle} />
-        {/* <Route path="/favoritos" component={Favoritos} />
-        <Route path="/generos" component={Generos} /> */}
+        <Route path="/" exact={ true } component={Home} />
+        <Route path="/Detalle/:id" component={Detalle} />
+        {/* <Route path="/Favoritos" component={Favoritos} /> */}
+        {/* <Route path="/generos" component={Generos} />  */}
     </Switch>
     </main>
     <Footer/>
