@@ -10,6 +10,7 @@ import Detalle from "./components/Detalle/Detalle";
 
 
 import {Switch,Route} from "react-router-dom";
+import SearchResults from "./components/SearchResults/SearchResults";
 function App() {
   return (
     <React.Fragment>
@@ -19,6 +20,7 @@ function App() {
     <Switch>
        <Route path="/" exact={ true } component={Home} />
        <Route path="/Detalle/:id" component={Detalle} />
+       <Route path="/searchResults/:resultado" component={SearchResults}></Route>
         {/* <Route path="/favoritos" component={Favoritos} />
         <Route path="/generos" component={Generos} /> */}
     </Switch>
