@@ -32,9 +32,8 @@ render(){
                 <li><img className="logo" src="./img/nuevoLogo.png" alt="logo"/></li>
                 <li><Link to="/">HOME</Link></li>
                 <li><Link to="/Favoritos">FAVORITOS</Link></li>
-                <li><Link to="/Valoradas">VALORADAS</Link></li>
-                <li><Link to="/Populares">POPULARES</Link></li>
-                <li><Link to="/generos">GÉNEROS</Link></li>
+                <li><Link to="/Valoradas">POPULARES</Link></li>
+                <li><Link to="/Populares">VALORADAS</Link></li>
                 <li><form action="" method='GET' onSubmit={(e) => this.controlarEnvio(e)}>
                     <label htmlFor="">Texto a filtrar: </label>
                     <input type="text" name='filtro' onChange={(e)=>this.guardarDatosDelInput(e)} value={this.state.textoDelInput} />

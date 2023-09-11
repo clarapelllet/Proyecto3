@@ -8,7 +8,7 @@ class Populares extends Component{
         }
     }
     componentDidMount(){
-        fetch(`https://api.themoviedb.org/3/movie/top_rated?api_key=81faef6942a31915ed87b416fbba64ba&language=en-US&page=1`)
+        fetch(`https://api.themoviedb.org/3/movie/popular?api_key=81faef6942a31915ed87b416fbba64ba&language=en-US&page=1`)
         .then(response => response.json())
         .then(data => this.setState({
             peliculaspop: data.results
