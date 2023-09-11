@@ -3,6 +3,7 @@ import Home from "./components/Home/Home";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import Detalle from "./components/Detalle/Detalle";
+
 // import Filtro from "./components/Filtro/Filtro";
 // import Tarjetas from "./components/Tarjetas/Tarjetas";
 // import Valoradas from "./components/Populares/Populares"
