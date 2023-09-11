@@ -1,10 +1,9 @@
-import Populares from "../Populares/Populares";
+import React, { Component } from 'react';
+
+class Populares extends Component{
 
 
-
-
-
-
+}
 
 
 

@@ -5,15 +5,16 @@ import Tarjetadet from '../Tarjetadet/Tarjetadet';
 // import Home from "../Home/Home";
 
 class Detalle extends Component{
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
         this.state = {
-          peliculadet:[]
+          peliculadet:[],
+          id: props.match.params.id
         }
     }
 
     componentDidMount(){
-        fetch(`https://api.themoviedb.org/3/movie/${this.props.match.params.id}?api_key=81faef6942a31915ed87b416fbba64ba&language=en-US`)
+        fetch(`https://api.themoviedb.org/3/movie/${this.id}?api_key=81faef6942a31915ed87b416fbba64ba&language=en-US`)
         .then(response => response.json())
         .then(data => this.setState({
             peliculadet: data.results
