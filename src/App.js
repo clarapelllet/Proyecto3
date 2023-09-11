@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Detalle from "./components/Detalle/Detalle";
 // import Filtro from "./components/Filtro/Filtro";
 // import Tarjetas from "./components/Tarjetas/Tarjetas";
-// import Valoradas from "./components/Populares/Populares"
+import Valoradas from "./components/Populares/Populares"
 import Populares from "./components/Valoradas/Valoradas"
 import Favoritos from "./components/Favoritos/Favoritos"
 
