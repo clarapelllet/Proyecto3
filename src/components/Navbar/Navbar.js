@@ -32,11 +32,10 @@ render(){
             <ul>
                 <li><img className="logo" src="/img/nuevoLogo.png" alt="logo"/></li>
                 <li><Link to="/">HOME</Link></li>
-                <li><Link to="/favoritos">FAVORITOS</Link></li>
-                <li><Link to="/valoradas">VALORADAS</Link></li>
-                <li><Link to="/valoradas">POPULARES</Link></li>
-                <li><Link to="/generos">GÉNEROS</Link></li>
-                <li><form action="" method='GET' onSubmit={()=>this.controlarEnvio()} >
+                <li><Link to="/Favoritos">FAVORITOS</Link></li>
+                <li><Link to="/Valoradas">POPULARES</Link></li>
+                <li><Link to="/Populares">VALORADAS</Link></li>
+                <li><form action="" method='GET' onSubmit={(e) => this.controlarEnvio(e)}>
                     <label htmlFor="">Texto a filtrar: </label>
                     <input type="text" onChange={(e)=>this.guardarDatosDelInput(e)} value={this.state.textoDelInput} />
                     <button  type='submit'>Filtrar</button>

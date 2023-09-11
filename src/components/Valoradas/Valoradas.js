@@ -1,16 +1,13 @@
-import react, {component} from "react";
-import tarjeta from "../Tarjetas/Tarjetas"
-import filtro from "../Filtro/Filtro"
+import React, {Component} from "react";
+import Tarjetas from "../Tarjetas/Tarjetas";
 
-class Valoradas extends component {
-    constructor (){
-        super()
+class Valoradas extends Component{
+    constructor(props){
+        super(props);
         this.state = {
-            peliculastr: [],
+            peliculastr : [],
         }
     }
-}
-
  componentDidMount ()
  {
     //buscamos datos
@@ -31,7 +28,7 @@ class Valoradas extends component {
         })
 
         this.setState({
-            peliculaspop: peliculasFiltradas,
+            peliculastr: peliculasFiltradas,
         })
 
     }
@@ -45,7 +42,7 @@ class Valoradas extends component {
                 <filtro filtrar={(texto) => this.filtrarPelicula(texto)} />
                 <h2>Peliculas Top Rated</h2>
                 { 
-                   this.state.peliculastr.slice(0,6).map(
+                   this.state.peliculastr.map(
                     (pelicula,i) => <Tarjetas key= {pelicula + i} datosPelicula={pelicula}/>
                    )
                 }
@@ -54,6 +51,6 @@ class Valoradas extends component {
             
         )
     }
-
+}
 
 export default Valoradas
