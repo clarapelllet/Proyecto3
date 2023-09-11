@@ -16,7 +16,7 @@ render(){
             <div className="cajas">
                 <p className="titulo">  {this.props.datosPelicula.title} </p>
                 <p className="estreno">  {this.props.datosPelicula.release_date} </p>
-                < Link to= "/Detalle" className="estreno"> Ir a Detalle </Link>
+                <Link to= "/Detalle" className="estreno"> Ir a Detalle </Link>
             </div>
         </article>
     )
