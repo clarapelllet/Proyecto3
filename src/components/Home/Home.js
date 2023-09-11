@@ -4,11 +4,11 @@ import Tarjetas from "../Tarjetas/Tarjetas";
 
 class Home extends Component{
 
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
         this.state = {
            peliculaspop : [],
-           peliculastr : []
+           peliculastr : [],
         }
     }
 

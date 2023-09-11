@@ -20,8 +20,9 @@ render(){
 
             {/* <p class="duracion"></p>
             <p class="descrip" id="genero"></p> */}
-            {/* <button class="añadirFav">Añadir a Favoritos</button>  */}
+            <button class="añadirFav">Añadir a Favoritos</button>  
          </article> 
+        // <p>Hola </p>
         )
     }
 }
