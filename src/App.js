@@ -6,7 +6,8 @@ import Detalle from "./components/Detalle/Detalle";
 // import Filtro from "./components/Filtro/Filtro";
 // import Tarjetas from "./components/Tarjetas/Tarjetas";
 // import Valoradas from "./components/Populares/Populares"
-// import Populares from "./components/Valoradas/Valoradas"
+import Populares from "./components/Valoradas/Valoradas"
+import Favoritos from "./components/Favoritos/Favoritos"
 
 
 import {Switch,Route} from "react-router-dom";
@@ -19,7 +20,8 @@ function App() {
     <Switch>
         <Route path="/" exact={ true } component={Home} />
         <Route path="/Detalle/:id" component={Detalle} />
-        {/* <Route path="/Favoritos" component={Favoritos} /> */}
+        <Route path="/Populares" component={Populares} />
+        {/* <Route path="/Favoritos" component={Favoritos} />  */}
         {/* <Route path="/generos" component={Generos} />  */}
     </Switch>
     </main>

@@ -9,7 +9,8 @@ class Favoritos extends Component{
         }
 
         render(){
-            <p>Hola</p>
+            return(<p>Hola</p>)
+            
             // console.log(this.setState.peliculaspop)
             // console.log(this.setState.peliculastr)
             // return(
