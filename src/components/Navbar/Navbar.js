@@ -32,6 +32,8 @@ render(){
                 <li><img className="logo" src="./img/nuevoLogo.png" alt="logo"/></li>
                 <li><Link to="/">HOME</Link></li>
                 <li><Link to="/favoritos">FAVORITOS</Link></li>
+                <li><Link to="/valoradas">VALORADAS</Link></li>
+                <li><Link to="/valoradas">POPULARES</Link></li>
                 <li><Link to="/generos">GÉNEROS</Link></li>
                 <li><form action="" method='GET' onSubmit={(e) => this.controlarEnvio(e)}>
                     <label htmlFor="">Texto a filtrar: </label>
