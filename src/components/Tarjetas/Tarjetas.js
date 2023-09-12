@@ -67,8 +67,11 @@ class Tarjetas extends Component {
                 <button onClick={()=>this.agergarYSacarDeFavs(this.props.datosPelicula.id)} type='button'>{this.state.textoBoton}</button>
                 <div className="cajas">
                     <p className="titulo">  {this.props.datosPelicula.title} </p>
-                    <p className="estreno">  {this.props.datosPelicula.release_date} </p>
-                    < Link to={`/Detalle/${this.props.datosPelicula.id}`} className="estreno"> Ir a Detalle </Link>
+                    <p className="estrenos">  {this.props.datosPelicula.release_date} </p>
+                    < Link to={`/Detalle/${this.props.datosPelicula.id}`} className="estrenos"> Ir a Detalle </Link>
+                <button onClick={this.visibilidad} type = "button"> 
+                    <p className= 'Mas'> Ver más </p>
+                </button> 
                 </div>
             </article>
         )

@@ -19,7 +19,7 @@ ul {
 p {
     color: white;
     font-family: 'Montserrat', sans-serif;
-    text-align: center;
+    text-align: center;    
 }
 
 .logotmdb {
@@ -34,12 +34,11 @@ p {
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.521);
     border-radius: 10px;
-    width: 200px; /* Ancho máximo de cada caja */
     margin: 10px; /* Espacio entre las cajas */
     text-align: center;
+    display: inline-block;
+    
 }
-
-
 
 .categoria {
     font-family: 'Montserrat', sans-serif;
@@ -63,8 +62,14 @@ p {
     color: white;
 }
 
-.estreno {
-    font-size: 10px;
+.estrenos {
+    font-size: 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    color: #fff;
+
 }
 
 .populares {
@@ -78,3 +83,18 @@ p {
     border-radius: 100px;
 }
 
+.Mas {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #3498db;
+}
+
+.Mas:hover {
+    background-color: #2980b9;
+}

@@ -52,6 +52,7 @@ render(){
                 (pelicula,i) => <Tarjetas key= {pelicula + i} datosPelicula={pelicula}/>
                )
             }
+            
         </section>
         <section>
             <filtro filtrar={(texto) => this.filtrarPelicula(texto)} />
