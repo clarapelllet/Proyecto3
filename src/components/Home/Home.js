@@ -2,6 +2,7 @@ import React, { Component } from "react";
 // import {Link} from "react-router-dom";
 import Tarjetas from "../Tarjetas/Tarjetas";
 import './Home.css'
+import Buscador from "../Buscador/Buscador";
 class Home extends Component{
 
     constructor(props){
@@ -43,6 +44,7 @@ render(){
     console.log(this.setState.peliculastr)
     return(
         <React.Fragment>
+            <Buscador/>
         <section>
             <h2>Peliculas Populares</h2>
             { 

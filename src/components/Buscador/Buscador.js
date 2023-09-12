@@ -25,8 +25,8 @@ class Buscador extends Component {
   render() {
     return (
       <div className='formularioBusqueda'>
-        <form className='busqueda' method='GET' onSubmit={(event) => this.prevenirRefresh(event)}>
-          <input
+        <form action=""  className='busqueda' method='GET' onSubmit={(e) => this.prevenirRefresh(e)}>
+        <input
             className='search'
             type='text'
             name='Search'
@@ -34,9 +34,11 @@ class Buscador extends Component {
             onChange={(e) => this.actualizarEstadoInput(e)}
             value={this.state.valorInput}
           />
-          <button className='botonBusqueda' type='submit'>Search</button>
+        <button className='botonBusqueda' type='submit'>Search</button>
         </form>
       </div>
+
+
     );
   }
 }

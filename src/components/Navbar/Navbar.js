@@ -32,11 +32,7 @@ class Navbar extends Component {
             <li><Link to="/Valoradas">POPULARES</Link></li>
             <li><Link to="/Populares">VALORADAS</Link></li>
             <li>
-              <form action="" method='GET' onSubmit={(e) => this.controlarEnvio(e)}>
-                <label htmlFor="">Texto a filtrar: </label>
-                <input type="text" onChange={(e) => this.guardarDatosDelInput(e)} value={this.state.textoDelInput} />
-                <button type='submit'>Filtrar</button>
-              </form>
+              
             </li>
           </ul>
         </nav>
