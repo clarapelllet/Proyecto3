@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Tarjetas from "../Tarjetas/Tarjetas";
+import './SearchResults.css'
 
 class SearchResults extends Component{
     constructor(props){
@@ -8,19 +9,19 @@ class SearchResults extends Component{
             peliculaBuscada: [],
         }
     }
-    componentDidMount(){
-
-        fetch(`https://api.themoviedb.org/3/search/movie?api_key=81faef6942a31915ed87b416fbba64ba&language=en-US&query=query=${this.props.match.params.resultado}&page=1`)
-        .then( res => res.json())
-        .then( data => this.setState({
+    componentDidMount() {
+      
+        fetch(`https://api.themoviedb.org/3/search/movie?api_key=81faef6942a31915ed87b416fbba64ba&language=en-US&query=${this.props.match.params.resultado}&page=1`)
+          .then(res => res.json())
+          .then(data => this.setState({
             peliculaBuscada: data.results,
-        }))
-        .catch()
-    }
+          }))
+          .catch();
+      }
     render(){
         return(
             <React.Fragment>
-                <h2  className="resultado"> Resultados de Busqueda </h2>
+                <h2  className="populares"> Resultados de Busqueda </h2>
                 <div>
                     <section>
                         {

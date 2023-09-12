@@ -1,0 +1,55 @@
+.detail {
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.info {
+    background-color: rgba(0, 0, 0, 0.521);
+    border-radius: 10px;
+    margin-right: 40px;
+}
+
+.imgDetail {
+    margin: 40px;
+}
+
+.imgDetailserie {
+    margin: 40px;
+    height: 500px;
+}
+
+.infoDetail {
+    background-color: rgba(0, 0, 0, 0.521);
+    border-radius: 10px;
+    justify-content: space-around;
+    padding: 40px;
+    color: white;
+}
+
+.tituloDetail {
+    font-weight: bolder;
+    text-align: center;
+    font-size: 30px;
+}
+
+.rating {
+    margin-left: 90px;
+    width: 50%;
+}
+
+.añadirFav {
+    margin-left: 82px;
+    margin-top: 50px;
+    width: 60%;
+    border-radius: 14px;
+}
+
+.duracion{
+    margin-left: 90px;
+    width: 50%;
+}

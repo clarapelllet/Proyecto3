@@ -1,0 +1,121 @@
+/* ESTILO GENERAL PARA TODOS NUESTROS HTML */
+
+body {
+    background: #7b4397;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #dc2430, #7b4397);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsl(356, 72%, 50%), #7b4397);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: 0px;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    height: 130px;
+    width: 100%;
+
+}
+
+.barra a {
+    margin-left: 100px;
+    color: white;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+.barra li {
+    list-style-type: none;
+    display: inline;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo {
+    height: 90px;
+    border-radius: 100px;
+}
+
+form {
+    margin-left: 70px;
+}
+p {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+footer {
+    background-color: black;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    height: 120px;
+    width: 100%;
+    margin-bottom: 0px;
+
+}
+.logotmdb {
+    width: 120px;
+    height: 100px;
+    display: flex;
+    margin-left: 45%;
+}
+
+/* ESTILO DEL INDEX.HTML Y FAVORITE.HTML */
+
+.cajas {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.521);
+    width: 200px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+   
+}
+
+
+.categoria {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 30px;
+    margin: 27px;
+}
+.pelisRec{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.pelis {
+    height: 270px;
+    width: 100%;
+   
+}
+
+.titulo {
+    font-size: 16px;
+    font-weight: bolder;
+    color: white;
+}
+
+.estreno {
+    font-size: 10px;
+}
+
+.populares {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.logomdb {
+    height: 90px;
+    border-radius: 100px;
+}

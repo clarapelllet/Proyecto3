@@ -1,0 +1,80 @@
+body {
+    background: #7b4397;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #dc2430, #7b4397);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsl(356, 72%, 50%), #7b4397);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: 0px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+p {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.logotmdb {
+    width: 120px;
+    height: 100px;
+    display: flex;
+    margin-left: 45%;
+}
+
+
+.cajas {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.521);
+    border-radius: 10px;
+    width: 200px; /* Ancho máximo de cada caja */
+    margin: 10px; /* Espacio entre las cajas */
+    text-align: center;
+}
+
+
+
+.categoria {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 30px;
+    margin: 27px;
+}
+.pelisRec{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.cajas img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+.titulo {
+    font-size: 16px;
+    font-weight: bolder;
+    color: white;
+}
+
+.estreno {
+    font-size: 10px;
+}
+
+.populares {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.logomdb {
+    height: 90px;
+    border-radius: 100px;
+}
+
