@@ -33,14 +33,16 @@ render(){
     console.log(this.state);
     return(
         <React.Fragment>
-            <h3> Favoritos </h3>
+            { this.state.favoritos.length > 0?
+
             <section>
             { 
                this.state.favoritos.map(
                 (pelicula,i) => <Tarjetas key= {pelicula + i} datosPelicula={pelicula}/>
                )
             }
-        </section>
+        </section>:
+        <h3>Loading...</h3>}
         </React.Fragment>
     )
 }

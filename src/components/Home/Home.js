@@ -45,15 +45,18 @@ render(){
     return(
         <React.Fragment>
             <Buscador/>
-        <section>
+            { this.state.peliculaspop.length > 0 ?
+        <section className="home-container">
             <h2>Peliculas Populares</h2>
             { 
                this.state.peliculaspop.slice(0,6).map(
                 (pelicula,i) => <Tarjetas key= {pelicula + i} datosPelicula={pelicula}/>
                )
             }
-        </section>
-        <section>
+        </section>:
+        <h3>Loading...</h3>}
+        { this.state.peliculastr.length > 0 ?
+        <section >
             <filtro filtrar={(texto) => this.filtrarPelicula(texto)} />
             <h2>Peliculas Top Rated</h2>
             { 
@@ -61,7 +64,8 @@ render(){
                 (pelicula,i) => <Tarjetas key= {pelicula + i} datosPelicula={pelicula}/>
                )
             }
-        </section>
+        </section>:
+        <h3>Loading...</h3>}
         </React.Fragment>
         
     )

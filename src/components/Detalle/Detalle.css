@@ -1,55 +1,27 @@
-.detail {
-    padding-left: 200px;
-    padding-right: 200px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
 
-.info {
+.cajas {
+    padding: 20px;
     background-color: rgba(0, 0, 0, 0.521);
+    width: 200px;
     border-radius: 10px;
-    margin-right: 40px;
-}
-
-.imgDetail {
-    margin: 40px;
-}
-
-.imgDetailserie {
-    margin: 40px;
-    height: 500px;
-}
-
-.infoDetail {
-    background-color: rgba(0, 0, 0, 0.521);
-    border-radius: 10px;
-    justify-content: space-around;
-    padding: 40px;
+    flex-wrap: wrap;
+    margin: inline block;
+  }
+  
+  .pelis {
+    width: 100%;
+  }
+  
+  .titulo {
+    font-size: 16px;
+    font-weight: bold;
     color: white;
-}
-
-.tituloDetail {
-    font-weight: bolder;
     text-align: center;
-    font-size: 30px;
-}
-
-.rating {
-    margin-left: 90px;
-    width: 50%;
-}
-
-.añadirFav {
-    margin-left: 82px;
-    margin-top: 50px;
-    width: 60%;
-    border-radius: 14px;
-}
-
-.duracion{
-    margin-left: 90px;
-    width: 50%;
-}
+  }
+  
+  .estreno {
+    font-size: 10px;
+    text-align: center;
+  }
+  
+  

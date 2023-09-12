@@ -22,7 +22,7 @@ class SearchResults extends Component{
         return(
             <React.Fragment>
                 <h2  className="populares"> Resultados de Busqueda </h2>
-                <div>
+                <div >
                     <section>
                         {
                             this.state.peliculaBuscada.slice(0,12).map(

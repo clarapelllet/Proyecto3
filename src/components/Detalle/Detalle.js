@@ -32,7 +32,7 @@ render(){
         this.state.peliculadet === '' ? 
         <p>Cargando...</p>
          :
-        <article className='cajas'>
+        <article className='detalle-container'>
             <img className="pelis" src= {`https://image.tmdb.org/t/p/w500${this.state.peliculadet.poster_path}`} alt="" />
             <div className="cajas">
                 <p className="titulo">  {this.state.peliculadet.title} </p>

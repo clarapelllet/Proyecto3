@@ -29,42 +29,11 @@ p {
     margin-left: 45%;
 }
 
-
-.cajas {
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.521);
-    border-radius: 10px;
-    width: 200px; /* Ancho máximo de cada caja */
-    margin: 10px; /* Espacio entre las cajas */
-    text-align: center;
-}
-
-
-
 .categoria {
     font-family: 'Montserrat', sans-serif;
     color: white;
     font-size: 30px;
     margin: 27px;
-}
-.pelisRec{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-.cajas img {
-    max-width: 100%; 
-    height: auto; 
-}
-
-.titulo {
-    font-size: 16px;
-    font-weight: bolder;
-    color: white;
-}
-
-.estreno {
-    font-size: 10px;
 }
 
 .populares {
@@ -72,9 +41,5 @@ p {
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-}
-.logomdb {
-    height: 90px;
-    border-radius: 100px;
 }
 
