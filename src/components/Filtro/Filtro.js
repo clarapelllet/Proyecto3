@@ -1,9 +1,9 @@
 // ESTO ES DEL REPO DE ALE!!! HAY QUE ADAPTARLO A NUESTRO FORM, ETC
 
 import React, { Component } from 'react';
+import './Filtro.css'
 
 class Filtro extends Component{
-
     constructor(props){
         super(props);
         this.state ={
@@ -13,17 +13,14 @@ class Filtro extends Component{
 
     controlarEnvio(evento){
         evento.preventDefault();
-        console.log("No me mandé");
         return true
     }
 
     guardarDatosDelInput(eventoEnElInput){
+        console. log (this.state. textoDelInput);
         this.setState({
-            textoDelInput: eventoEnElInput.target.value
-        }, () => this.props.filtrar(this.state.textoDelInput))
-
-       // console.log(this.state.textoDelInput);
-
+        textoDelInput: eventoEnElInput. target. value
+    }, () => this.props.filtrar(this.state.textoDelInput))
         return true
     }
 
@@ -39,5 +36,4 @@ class Filtro extends Component{
     }
 
 }
-
 export default Filtro

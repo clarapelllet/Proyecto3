@@ -19,7 +19,7 @@ ul {
 p {
     color: white;
     font-family: 'Montserrat', sans-serif;
-    text-align: center;
+    text-align: center;    
 }
 
 .logotmdb {
@@ -29,11 +29,47 @@ p {
     margin-left: 45%;
 }
 
+
+.cajas {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.521);
+    border-radius: 10px;
+    margin: 10px; /* Espacio entre las cajas */
+    text-align: center;
+    display: inline-block;
+    
+}
+
 .categoria {
     font-family: 'Montserrat', sans-serif;
     color: white;
     font-size: 30px;
     margin: 27px;
+}
+.pelisRec{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.cajas img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+.titulo {
+    font-size: 16px;
+    font-weight: bolder;
+    color: white;
+}
+
+.estrenos {
+    font-size: 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    color: #fff;
+
 }
 
 .populares {
@@ -43,3 +79,18 @@ p {
     flex-wrap: wrap;
 }
 
+.Mas {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #3498db;
+}
+
+.Mas:hover {
+    background-color: #2980b9;
+}
