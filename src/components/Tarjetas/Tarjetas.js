@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Link} from "react-router-dom";
-import "./Tarjetas.css"
+
 
 class Tarjetas extends Component {
     constructor(props){
