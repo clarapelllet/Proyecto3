@@ -26,12 +26,12 @@ class Valoradas extends Component{
       return; // Evita filtrar si los datos aún no se han cargado
     }
 
-    const peliculasFiltradas = this.state.peliculastr.filter((peliFiltrada) => {
+    const peliculasFiltradas = this.state.peliculastr.filter(function(peliFiltrada){
       return peliFiltrada.title.includes(textoAFiltrar);
     });
 
     this.setState({
-      peliculasFiltradas: peliculasFiltradas,
+      peliculastr: peliculasFiltradas,
     });
   }
 
