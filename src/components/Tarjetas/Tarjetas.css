@@ -1,13 +1,13 @@
 /* CSS para el componente Tarjetas */
 .cajas {
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.521);
-    width: 200px;
-    border-radius: 10px;
-    flex-wrap: wrap;
-    margin: 10px;
-    text-align: center;
-  }
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.521);
+  width: 200px;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  margin: 10px;
+  text-align: center;
+}
   
   .pelis {
     width: 100%;

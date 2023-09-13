@@ -1,17 +1,4 @@
 
-.cajas {
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.521);
-    width: 200px;
-    border-radius: 10px;
-    flex-wrap: wrap;
-    margin: inline block;
-  }
-  
-  .pelis {
-    width: 100%;
-  }
-  
   .titulo {
     font-size: 16px;
     font-weight: bold;
@@ -23,5 +10,29 @@
     font-size: 10px;
     text-align: center;
   }
-  
-  
+
+  .imagen {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos */
+    padding: 20px;
+    width: 200px;
+    margin: inline block;
+  }
+
+.pelis {
+    width: 50px; /* Ajusta el ancho de la imagen según tus necesidades */
+    height: auto; /* Esto mantiene la relación de aspecto de la imagen */
+}
+
+.info {
+    background-color:black; /* Cambia el color de fondo según tus preferencias */
+    padding: 20px; /* Espacio interior alrededor del contenido */
+    margin-left: 10px; /* Espacio entre la imagen y el cuadro de información */
+    border-radius: 5px; /* Borde redondeado */
+    flex-grow: 1 ; /* Permite que el cuadro de información ocupe todo el espacio restante */
+  }
+
+
+
+
+
