@@ -10,7 +10,7 @@ import Populares from "./components/Valoradas/Valoradas"
 import Favoritos from "./components/Favoritos/Favoritos"
 import {Switch,Route} from "react-router-dom";
 import SearchResults from "./components/SearchResults/SearchResults";
-import NotFound from "./components/Buscador/NotFound/notFound";
+import NotFound from "./components/NotFound/notFound";
 
 
 
@@ -27,7 +27,7 @@ function App() {
        <Route path="/Populares" component={Populares} />
        <Route path="/searchResults/:resultado" component={SearchResults}></Route>
       <Route path="/Favoritos" component={Favoritos} />
-      <Route path="" component={NotFound}></Route>
+      <Route path="" component={NotFound}/>
     </Switch>
     </main>
     <Footer/>
