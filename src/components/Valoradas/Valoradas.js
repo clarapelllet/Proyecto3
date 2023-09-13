@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import Filtro from "../Filtro/Filtro";
 import Tarjetas from "../Tarjetas/Tarjetas";
 
 class Valoradas extends Component{
@@ -28,7 +29,7 @@ class Valoradas extends Component{
         })
 
         this.setState({
-            peliculastr: peliculasFiltradas,
+            peliculaspop: peliculasFiltradas,
         })
 
     }
@@ -38,8 +39,9 @@ class Valoradas extends Component{
         console.log(this.setState.peliculastr)
         return(
             <React.Fragment>
+                <Filtro/>
             <section>
-                <filtro filtrar={(texto) => this.filtrarPelicula(texto)} />
+                <filtro filtrar={(texto) => this.peliculasFiltradas(texto)} />
                 <h2>Peliculas Top Rated</h2>
                 { 
                    this.state.peliculastr.map(

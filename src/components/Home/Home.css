@@ -91,12 +91,12 @@ form {
 }
 
 .estrenos {
-    font-size: 20px;
     font-size: 16px;
     text-align: center;
     text-decoration: none;
     border: none;
     color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
 
 }
 
