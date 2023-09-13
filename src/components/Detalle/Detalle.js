@@ -40,7 +40,9 @@ class Detalle extends Component {
           <p className="estreno">Release Date: {peliculadet.release_date}</p>
           <p className="estreno">Overview: {peliculadet.overview}</p>
           <p className="estreno">Vote Average: {peliculadet.vote_average}</p>
-          {/* <p className="estreno">Genres: {peliculadet.genres.join(', ')}</p> */}
+          {/* <p className="estreno">Generos: {peliculadet.genres.join(' , ')}</p>  */}
+            <p className="estreno"> Duracion: {peliculadet.runtime}</p>
+          
         </div>
       </div>
     );

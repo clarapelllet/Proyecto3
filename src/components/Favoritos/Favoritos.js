@@ -34,7 +34,7 @@ render(){
     return(
         <React.Fragment>
             <h2> Mis favoritos</h2>
-            {/* { this.state.favoritos.length > 0? */}
+            {/* this.state.favoritos.length > 0?  */}
 
             <section>
             { 
