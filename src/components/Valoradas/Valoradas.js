@@ -21,21 +21,19 @@ class Valoradas extends Component{
   
  }
 
- filtrarPelicula(textoAFiltrar)
- {
-    // if (this.state.peliculastr.length === 0) {
-    //     return; // Evita filtrar si no hay datos cargados aún
-    // }
-
-        let peliculasFiltradas = this.state.peliculaspop.filter(function(pelifiltrada){
-            return pelifiltrada.name.includes(textoAFiltrar) //includes retorna TRUE o FALSE
-        })
-
-        this.setState({
-            peliculaspop: peliculasFiltradas,
-        })
-
+ filtrarPelicula(textoAFiltrar) {
+    if (!this.state.peliculastr) {
+      return; // Evita filtrar si los datos aún no se han cargado
     }
+
+    const peliculasFiltradas = this.state.peliculastr.filter((peliFiltrada) => {
+      return peliFiltrada.title.includes(textoAFiltrar);
+    });
+
+    this.setState({
+      peliculasFiltradas: peliculasFiltradas,
+    });
+  }
 
     render()
     {
