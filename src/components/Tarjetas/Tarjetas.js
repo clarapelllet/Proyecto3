@@ -27,7 +27,8 @@ class Tarjetas extends Component {
     }
     agergarYSacarDeFavs(id){
         //Guardar un id en un array y luego en localStorage
-        let favoritos = [];
+        let
+         favoritos = [];
         let recuperoStorage = localStorage.getItem('favoritos');
 
         if (recuperoStorage !== null){
@@ -71,14 +72,9 @@ class Tarjetas extends Component {
                     <p className="estrenos">  {this.props.datosPelicula.release_date} </p>
                     < Link to={`/Detalle/${this.props.datosPelicula.id}`} className="estrenos"> Ir a Detalle </Link>
                 </div>
-                <button onClick={this.visibilidad} type = "button"> 
-                    <p className= 'Mas'> Ver más </p>
-                </button> 
-                {this.state.view && (
-                    <p className='Mas'>{this.props.datosPelicula.overview}</p>
-                ) }
             </article>
         )
     }
 }
 export default Tarjetas;
+
