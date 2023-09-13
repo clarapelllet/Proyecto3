@@ -5,7 +5,7 @@ class Favoritos extends Component{
     constructor(props){
         super(props);
         this.state = {
-           favoritos : [],
+            favoritos : [],
         }
     }
 
@@ -18,7 +18,7 @@ componentDidMount(){
         let peliculas= []
 
         favs.forEach((id)=> {
-         fetch(`https://api.themoviedb.org/3/movie/${id}api_key=81faef6942a31915ed87b416fbba64ba&language=en-US&page=1`)
+         fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=81faef6942a31915ed87b416fbba64ba&language=en-US&page=1`)
         .then(response => response.json())
         .then(favs =>{
             peliculas.push(favs);
@@ -33,7 +33,8 @@ render(){
     console.log(this.state);
     return(
         <React.Fragment>
-            { this.state.favoritos.length > 0?
+            <h2> Mis favoritos</h2>
+            {/* { this.state.favoritos.length > 0? */}
 
             <section>
             { 
@@ -41,8 +42,7 @@ render(){
                 (pelicula,i) => <Tarjetas key= {pelicula + i} datosPelicula={pelicula}/>
                )
             }
-        </section>:
-        <h3>Loading...</h3>}
+        </section>
         </React.Fragment>
     )
 }
