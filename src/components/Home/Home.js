@@ -10,8 +10,13 @@ class Home extends Component{
         this.state = {
            peliculaspop : [],
            peliculastr : [],
+           view: false,
         }
     }
+    
+    visibilidad = () => {
+        this.setState({view: !this.state.view})
+    };
 
 componentDidMount(){
     fetch(`https://api.themoviedb.org/3/movie/popular?api_key=81faef6942a31915ed87b416fbba64ba&language=en-US&page=1`)

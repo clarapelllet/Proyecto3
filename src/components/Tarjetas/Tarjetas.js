@@ -66,17 +66,19 @@ class Tarjetas extends Component {
             <article className='cajas'>
                 <img className="pelis" src= {`https://image.tmdb.org/t/p/w500${this.props.datosPelicula.poster_path}`} alt="" />
                 <button onClick={()=>this.agergarYSacarDeFavs(this.props.datosPelicula.id)} type='button'className="buttonAgregarFavoritos">{this.state.textoBoton}</button>
-                <div className="cajas">
+                <div>
                     <p className="titulo">  {this.props.datosPelicula.title} </p>
                     <p className="estrenos">  {this.props.datosPelicula.release_date} </p>
                     < Link to={`/Detalle/${this.props.datosPelicula.id}`} className="estrenos"> Ir a Detalle </Link>
+                </div>
                 <button onClick={this.visibilidad} type = "button"> 
                     <p className= 'Mas'> Ver más </p>
                 </button> 
-                </div>
+                {this.state.view && (
+                    <p className='Mas'>{this.props.datosPelicula.overview}</p>
+                ) }
             </article>
         )
     }
-    
 }
 export default Tarjetas;
