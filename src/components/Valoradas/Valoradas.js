@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import Filtro from "../Filtro/Filtro";
 import Tarjetas from "../Tarjetas/Tarjetas";
 
 class Valoradas extends Component{
@@ -20,26 +21,28 @@ class Valoradas extends Component{
   
  }
 
- filtrarPelicula(textoAFiltrar)
- {
-    //  Desarrollar el método para que deje solo los personajes en donde el texto a filtrar esté incluido en el nombre.
-        let peliculasFiltradas = this.state.peliculaspop.filter(function(pelifiltrada){
-            return pelifiltrada.name.includes(textoAFiltrar) //includes retorna TRUE o FALSE
-        })
-
-        this.setState({
-            peliculastr: peliculasFiltradas,
-        })
-
+ filtrarPelicula(textoAFiltrar) {
+    if (!this.state.peliculastr) {
+      return; // Evita filtrar si los datos aún no se han cargado
     }
+
+    const peliculasFiltradas = this.state.peliculastr.filter(function(peliFiltrada){
+      return peliFiltrada.title.includes(textoAFiltrar);
+    });
+
+    this.setState({
+      peliculastr: peliculasFiltradas,
+    });
+  }
 
     render()
     {
         console.log(this.setState.peliculastr)
         return(
             <React.Fragment>
+                
             <section>
-                <filtro filtrar={(texto) => this.filtrarPelicula(texto)} />
+            <Filtro filtrar={(texto) => this.filtrarPelicula(texto)} />
                 <h2>Peliculas Top Rated</h2>
                 { 
                    this.state.peliculastr.map(
