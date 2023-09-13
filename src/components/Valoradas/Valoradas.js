@@ -23,7 +23,10 @@ class Valoradas extends Component{
 
  filtrarPelicula(textoAFiltrar)
  {
-    //  Desarrollar el método para que deje solo los personajes en donde el texto a filtrar esté incluido en el nombre.
+    // if (this.state.peliculastr.length === 0) {
+    //     return; // Evita filtrar si no hay datos cargados aún
+    // }
+
         let peliculasFiltradas = this.state.peliculaspop.filter(function(pelifiltrada){
             return pelifiltrada.name.includes(textoAFiltrar) //includes retorna TRUE o FALSE
         })
@@ -39,9 +42,9 @@ class Valoradas extends Component{
         console.log(this.setState.peliculastr)
         return(
             <React.Fragment>
-                <Filtro/>
+                
             <section>
-                <filtro filtrar={(texto) => this.peliculasFiltradas(texto)} />
+            <Filtro filtrar={(texto) => this.filtrarPelicula(texto)} />
                 <h2>Peliculas Top Rated</h2>
                 { 
                    this.state.peliculastr.map(
