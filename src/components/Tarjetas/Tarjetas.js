@@ -64,7 +64,7 @@ class Tarjetas extends Component {
         console.log(this.props)
         return(
             <article className='cajas'>
-                <img className="pelis" src= {`https://image.tmdb.org/t/p/w500${this.props.datosPelicula.poster_path}`} alt="" />
+                <img className="pelis" src= {`https://image.tmdb.org/t/p/w500${this.props.datosPelicula.poster_path}`} alt="hola" />
                 <button onClick={()=>this.agergarYSacarDeFavs(this.props.datosPelicula.id)} type='button'className="buttonAgregarFavoritos">{this.state.textoBoton}</button>
                 <div>
                     <p className="titulo">  {this.props.datosPelicula.title} </p>
