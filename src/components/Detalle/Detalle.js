@@ -41,6 +41,8 @@ class Detalle extends Component {
           <p className="estreno-grande"><span className="titulo-antes-dos-puntos">Overview:</span> {peliculadet.overview}</p>
           <p className="estreno-grande"><span className="titulo-antes-dos-puntos">Vote Average:</span> {peliculadet.vote_average}</p>
           <p className="estreno-grande"><span className="titulo-antes-dos-puntos">Duracion:</span> {peliculadet.runtime}</p>
+          <p className="estreno-grande"> <span className="titulo-antes-dos-puntos">Genero:</span>{peliculadet.genres === undefined ?[]: peliculadet.genres.map((gen) => gen.name).join(", ")} </p>
+            
         </div>
       </div>
     );
