@@ -1,40 +1,36 @@
+/* Filtro.css */
+.filtro {
+  text-align: right;
+  margin-top: 20px;
+  margin-right: 20px;
+}
 
-.formularioBusqueda {
-    text-align: right;
-    margin-top: 20px;
-    margin-right: 20px;
-  }
-  
-  .busqueda {
-    display: flex;
-    justify-content: right;
-    align-items: right;
-  }
-  
-  .search {
-    padding: 10px;
-    width: 300px;
-    border: 2px solid #d44c4e;
-    border-radius: 5px;
-    font-size: 16px;
-    outline: none;
-  }
-  
-  .botonBusqueda {
-    background-color: #d44c4e;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    margin-left: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .botonBusqueda:hover {
-    background-color: #792f2f; 
-  }
-  
-  
-  
-    
+.lupa {
+  display: flex;
+  justify-content: flex-end; /* Para alinear los elementos a la derecha */
+  align-items: center; /* Para alinear verticalmente los elementos al centro */
+}
+
+.search {
+  padding: 10px;
+  width: 300px;
+  border: 2px solid #d44c4e;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+.botonBusqueda {
+  background-color: #d44c4e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.botonBusqueda:hover {
+  background-color: #792f2f;
+}

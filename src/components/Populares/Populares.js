@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import Tarjetas from "../Tarjetas/Tarjetas";
+import Filtro from "../Filtro/Filtro";
+
+
 class Populares extends Component{
     constructor(props){
         super(props);
@@ -15,7 +18,7 @@ class Populares extends Component{
         }))
         .catch()
     }
-    filtrarPelicula(textoAFiltrar){
+filtrarPelicula(textoAFiltrar){
         //  Desarrollar el método para que deje solo los personajes en donde el texto a filtrar esté incluido en el nombre.
             let peliculasFiltradas = this.state.peliculaspop.filter(function(pelifiltrada){
                 return pelifiltrada.name.includes(textoAFiltrar) //includes retorna TRUE o FALSE
@@ -32,6 +35,7 @@ class Populares extends Component{
             console.log(this.setState.peliculaspop)
             return(
                 <React.Fragment>
+                <Filtro/>
                 <section>
                     <filtro filtrar={(texto) => this.filtrarPelicula(texto)} />
                     <h2>Peliculas populares</h2>
