@@ -1,17 +1,21 @@
-/* Filtro.css */
-.filtro {
+
+
+/* Clase para el contenedor del formulario de búsqueda */
+.FiltroBusqueda {
   text-align: right;
   margin-top: 20px;
   margin-right: 20px;
 }
 
-.lupa {
+/* Clase para el formulario y sus elementos */
+.FiltroBusqueda form {
   display: flex;
-  justify-content: flex-end; /* Para alinear los elementos a la derecha */
-  align-items: center; /* Para alinear verticalmente los elementos al centro */
+  justify-content: flex-end;
+  align-items: center;
 }
 
-.search {
+/* Estilo para el campo de búsqueda */
+.FiltroBusqueda input[type="text"] {
   padding: 10px;
   width: 300px;
   border: 2px solid #d44c4e;
@@ -20,7 +24,8 @@
   outline: none;
 }
 
-.botonBusqueda {
+/* Estilo para el botón de búsqueda */
+.FiltroBusqueda button {
   background-color: #d44c4e;
   color: white;
   border: none;
@@ -31,6 +36,7 @@
   transition: background-color 0.3s;
 }
 
-.botonBusqueda:hover {
+/* Estilo para el botón de búsqueda al pasar el mouse por encima */
+.FiltroBusqueda button:hover {
   background-color: #792f2f;
 }
