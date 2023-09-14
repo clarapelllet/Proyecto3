@@ -71,6 +71,7 @@ class Tarjetas extends Component {
                     <p className="titulo">  {this.props.datosPelicula.title} </p>
                     <p className="estrenos">  {this.props.datosPelicula.release_date} </p>
                     < Link to={`/Detalle/${this.props.datosPelicula.id}`} className="estrenos"> Ir a Detalle </Link>
+                    
                 </div>
             </article>
         )

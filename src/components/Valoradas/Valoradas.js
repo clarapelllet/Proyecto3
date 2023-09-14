@@ -7,6 +7,7 @@ class Valoradas extends Component{
         super(props);
         this.state = {
             peliculastr : [],
+            page:1
         }
     }
  componentDidMount ()
@@ -15,25 +16,12 @@ class Valoradas extends Component{
     fetch(`https://api.themoviedb.org/3/movie/top_rated?api_key=81faef6942a31915ed87b416fbba64ba&language=en-US&page=1`)
  .then(response => response.json())
  .then(data => this.setState({
-     peliculastr: data.results
+     peliculastr: data.results,
+     page: this.state.page+1
  }))
  .catch()
   
  }
- filtrarPelicula(textoAFiltrar)
- {
-    // if (this.state.peliculastr.length === 0) {
-    //     return; // Evita filtrar si no hay datos cargados aún
-    // }
-        let peliculasFiltradas = this.state.peliculaspop.filter(function(pelifiltrada){
-            return pelifiltrada.name.includes(textoAFiltrar) //includes retorna TRUE o FALSE
-        })
-
-        this.setState({
-            peliculaspop: peliculasFiltradas,
-        })
-
-    }
 
  filtrarPelicula(textoAFiltrar) {
     if (!this.state.peliculastr) {
@@ -48,6 +36,15 @@ class Valoradas extends Component{
       peliculastr: peliculasFiltradas,
     });
   }
+  traerMas(){
+    fetch(`https://api.themoviedb.org/3/movie/popular?api_key=81faef6942a31915ed87b416fbba64ba&language=en-US&page=`+this.state.page)
+        .then( res => res.json())
+        .then(data=> this.setState({
+            peliculastr: this.state.peliculastr.concat(data.results),
+            page: this.state.page+1
+        }))
+        .catch()
+}
 
     render()
     {
@@ -64,6 +61,7 @@ class Valoradas extends Component{
                    )
                 }
             </section>
+            <button onClick={() => this.traerMas(this.state.peliculastr)} ><i class="fa-solid fa-ticket"></i>Traer Más</button>
             </React.Fragment>
             
         )
