@@ -34,6 +34,21 @@ class Valoradas extends Component{
         })
 
     }
+
+ filtrarPelicula(textoAFiltrar) {
+    if (!this.state.peliculastr) {
+      return; // Evita filtrar si los datos aún no se han cargado
+    }
+
+    const peliculasFiltradas = this.state.peliculastr.filter(function(peliFiltrada){
+      return peliFiltrada.title.includes(textoAFiltrar);
+    });
+
+    this.setState({
+      peliculastr: peliculasFiltradas,
+    });
+  }
+
     render()
     {
         console.log(this.setState.peliculastr)

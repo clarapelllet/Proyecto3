@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-// import {Link} from "react-router-dom";
+import {Link} from "react-router-dom";
 import Tarjetas from "../Tarjetas/Tarjetas";
 import './Home.css'
 import Buscador from "../Buscador/Buscador";
@@ -53,6 +53,7 @@ render(){
             { this.state.peliculaspop.length > 0 ?
         <section className="home-container">
             <h2>Peliculas Populares</h2>
+            <h2><Link to='/Valoradas' className='ver-todas-link'>Ver Todas </Link> </h2>
             { 
                this.state.peliculaspop.slice(0,6).map(
                 (pelicula,i) => <Tarjetas key= {pelicula + i} datosPelicula={pelicula}/>
@@ -64,6 +65,7 @@ render(){
         <section >
             <filtro filtrar={(texto) => this.filtrarPelicula(texto)} />
             <h2>Peliculas Top Rated</h2>
+            <h2><Link to='/Populares' className='ver-todas-link'>Ver Todas </Link> </h2>
             { 
                this.state.peliculastr.slice(0,6).map(
                 (pelicula,i) => <Tarjetas key= {pelicula + i} datosPelicula={pelicula}/>
