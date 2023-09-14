@@ -20,6 +20,20 @@ class Valoradas extends Component{
  .catch()
   
  }
+ filtrarPelicula(textoAFiltrar)
+ {
+    // if (this.state.peliculastr.length === 0) {
+    //     return; // Evita filtrar si no hay datos cargados aún
+    // }
+        let peliculasFiltradas = this.state.peliculaspop.filter(function(pelifiltrada){
+            return pelifiltrada.name.includes(textoAFiltrar) //includes retorna TRUE o FALSE
+        })
+
+        this.setState({
+            peliculaspop: peliculasFiltradas,
+        })
+
+    }
 
  filtrarPelicula(textoAFiltrar) {
     if (!this.state.peliculastr) {
@@ -55,5 +69,4 @@ class Valoradas extends Component{
         )
     }
 }
-
 export default Valoradas
