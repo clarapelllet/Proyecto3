@@ -36,13 +36,11 @@ class Detalle extends Component {
           />
         </div>
         <div className="detalle-info">
-          <h2 className="titulo">{peliculadet.title}</h2>
-          <p className="estreno">Release Date: {peliculadet.release_date}</p>
-          <p className="estreno">Overview: {peliculadet.overview}</p>
-          <p className="estreno">Vote Average: {peliculadet.vote_average}</p>
-          {/* <p className="estreno">Generos: {peliculadet.genres.join(' , ')}</p>  */}
-            <p className="estreno"> Duracion: {peliculadet.runtime}</p>
-          
+          <h2 className="titulo">Title: {peliculadet.title}</h2>
+          <p className="estreno-grande"><span className="titulo-antes-dos-puntos">Release Date:</span> {peliculadet.release_date}</p>
+          <p className="estreno-grande"><span className="titulo-antes-dos-puntos">Overview:</span> {peliculadet.overview}</p>
+          <p className="estreno-grande"><span className="titulo-antes-dos-puntos">Vote Average:</span> {peliculadet.vote_average}</p>
+          <p className="estreno-grande"><span className="titulo-antes-dos-puntos">Duracion:</span> {peliculadet.runtime}</p>
         </div>
       </div>
     );
@@ -50,4 +48,6 @@ class Detalle extends Component {
 }
 
 export default Detalle;
+
+
 

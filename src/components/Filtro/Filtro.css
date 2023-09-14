@@ -1,21 +1,21 @@
-
+/* Filtro.css */
 
 /* Clase para el contenedor del formulario de búsqueda */
-.FiltroBusqueda {
+.lupa {
   text-align: right;
   margin-top: 20px;
   margin-right: 20px;
 }
 
 /* Clase para el formulario y sus elementos */
-.FiltroBusqueda form {
+.filtro {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
 /* Estilo para el campo de búsqueda */
-.FiltroBusqueda input[type="text"] {
+.filtro input[type="text"] {
   padding: 10px;
   width: 300px;
   border: 2px solid #d44c4e;
@@ -25,7 +25,7 @@
 }
 
 /* Estilo para el botón de búsqueda */
-.FiltroBusqueda button {
+.filtro button {
   background-color: #d44c4e;
   color: white;
   border: none;
@@ -37,6 +37,7 @@
 }
 
 /* Estilo para el botón de búsqueda al pasar el mouse por encima */
-.FiltroBusqueda button:hover {
+.filtro button:hover {
   background-color: #792f2f;
 }
+
